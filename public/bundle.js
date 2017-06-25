@@ -893,7 +893,7 @@ eval("/*\r\n\tMIT License http://www.opensource.org/licenses/mit-license.php\r\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function($) {\n\nvar _reactRouter = __webpack_require__(247);\n\nvar React = __webpack_require__(8);\nvar ReactDOM = __webpack_require__(160);\n\n\n//load foundation\n//require('style-loader!css-loader!foundation-sites/dist/foundation.min.css');\n$(document).foundation();\n\n//App css\n__webpack_require__(272);\n\nReactDOM.render(React.createElement(\n  'p',\n  null,\n  'Boilerplate 3 project'\n), document.getElementById('app'));\n\n__webpack_require__(121);\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(275)))//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTE4LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2FwcC9hcHAuanN4P2JiNDkiXSwic291cmNlc0NvbnRlbnQiOlsibGV0IFJlYWN0ID0gcmVxdWlyZSgncmVhY3QnKTtcclxubGV0IFJlYWN0RE9NID0gcmVxdWlyZSgncmVhY3QtZG9tJyk7XHJcbmltcG9ydCB7IFJvdXRlLCBSb3V0ZXIsIEluZGV4Um91dGUsIGhhc2hIaXN0b3J5IH0gZnJvbSAncmVhY3Qtcm91dGVyJztcclxuXHJcbi8vbG9hZCBmb3VuZGF0aW9uXHJcbi8vcmVxdWlyZSgnc3R5bGUtbG9hZGVyIWNzcy1sb2FkZXIhZm91bmRhdGlvbi1zaXRlcy9kaXN0L2ZvdW5kYXRpb24ubWluLmNzcycpO1xyXG4kKGRvY3VtZW50KS5mb3VuZGF0aW9uKCk7XHJcblxyXG4vL0FwcCBjc3NcclxucmVxdWlyZSgnc3R5bGUtbG9hZGVyIWNzcy1sb2FkZXIhc2Fzcy1sb2FkZXIhYXBwbGljYXRpb25TdHlsZXMnKTtcclxuXHJcblJlYWN0RE9NLnJlbmRlcihcclxuICA8cD5Cb2lsZXJwbGF0ZSAzIHByb2plY3Q8L3A+LFxyXG4gIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhcHAnKVxyXG4pO1xyXG5cclxuXHJcbnJlcXVpcmUoJy4vcmVkdXgtZXhhbXBsZS5qc3gnKTtcblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gYXBwL2FwcC5qc3giXSwibWFwcGluZ3MiOiI7O0FBRUE7QUFDQTtBQUhBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFJQTtBIiwic291cmNlUm9vdCI6IiJ9");
+eval("/* WEBPACK VAR INJECTION */(function($) {\n\nvar _reactRouter = __webpack_require__(247);\n\nvar React = __webpack_require__(8);\nvar ReactDOM = __webpack_require__(160);\n\n\n//load foundation\n//require('style-loader!css-loader!foundation-sites/dist/foundation.min.css');\n$(document).foundation();\n\n//App css\n__webpack_require__(272);\n\nReactDOM.render(React.createElement(\n  'p',\n  null,\n  'Boilerplate 3 project'\n), document.getElementById('app'));\n\n//require('./redux-example.jsx');\n__webpack_require__(277);\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(275)))//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTE4LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2FwcC9hcHAuanN4P2JiNDkiXSwic291cmNlc0NvbnRlbnQiOlsibGV0IFJlYWN0ID0gcmVxdWlyZSgncmVhY3QnKTtcclxubGV0IFJlYWN0RE9NID0gcmVxdWlyZSgncmVhY3QtZG9tJyk7XHJcbmltcG9ydCB7IFJvdXRlLCBSb3V0ZXIsIEluZGV4Um91dGUsIGhhc2hIaXN0b3J5IH0gZnJvbSAncmVhY3Qtcm91dGVyJztcclxuXHJcbi8vbG9hZCBmb3VuZGF0aW9uXHJcbi8vcmVxdWlyZSgnc3R5bGUtbG9hZGVyIWNzcy1sb2FkZXIhZm91bmRhdGlvbi1zaXRlcy9kaXN0L2ZvdW5kYXRpb24ubWluLmNzcycpO1xyXG4kKGRvY3VtZW50KS5mb3VuZGF0aW9uKCk7XHJcblxyXG4vL0FwcCBjc3NcclxucmVxdWlyZSgnc3R5bGUtbG9hZGVyIWNzcy1sb2FkZXIhc2Fzcy1sb2FkZXIhYXBwbGljYXRpb25TdHlsZXMnKTtcclxuXHJcblJlYWN0RE9NLnJlbmRlcihcclxuICA8cD5Cb2lsZXJwbGF0ZSAzIHByb2plY3Q8L3A+LFxyXG4gIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhcHAnKVxyXG4pO1xyXG5cclxuXHJcbi8vcmVxdWlyZSgnLi9yZWR1eC1leGFtcGxlLmpzeCcpO1xyXG5yZXF1aXJlKCcuL3JlZHV4LXRvZG8tZXhhbXBsZS5qc3gnKTtcblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gYXBwL2FwcC5qc3giXSwibWFwcGluZ3MiOiI7O0FBRUE7QUFDQTtBQUhBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFJQTtBQUNBO0EiLCJzb3VyY2VSb290IjoiIn0=");
 
 /***/ }),
 /* 119 */
@@ -908,13 +908,7 @@ eval("__webpack_require__(117)(__webpack_require__(158))//# sourceMappingURL=dat
 eval("__webpack_require__(117)(__webpack_require__(159))//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTIwLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vfi9qcXVlcnkvZGlzdC9qcXVlcnkubWluLmpzPzQ4ZDEiXSwic291cmNlc0NvbnRlbnQiOlsicmVxdWlyZShcIiEhQzpcXFxcVXNlcnNcXFxcQW1hcm9cXFxcRGVza3RvcFxcXFxMZWFyblJlZHV4XFxcXG5vZGVfbW9kdWxlc1xcXFxzY3JpcHQtbG9hZGVyXFxcXGFkZFNjcmlwdC5qc1wiKShyZXF1aXJlKFwiISFDOlxcXFxVc2Vyc1xcXFxBbWFyb1xcXFxEZXNrdG9wXFxcXExlYXJuUmVkdXhcXFxcbm9kZV9tb2R1bGVzXFxcXHJhdy1sb2FkZXJcXFxcaW5kZXguanMhQzpcXFxcVXNlcnNcXFxcQW1hcm9cXFxcRGVza3RvcFxcXFxMZWFyblJlZHV4XFxcXG5vZGVfbW9kdWxlc1xcXFxqcXVlcnlcXFxcZGlzdFxcXFxqcXVlcnkubWluLmpzXCIpKVxuXG5cbi8vLy8vLy8vLy8vLy8vLy8vL1xuLy8gV0VCUEFDSyBGT09URVJcbi8vIC4vfi9zY3JpcHQtbG9hZGVyIS4vfi9qcXVlcnkvZGlzdC9qcXVlcnkubWluLmpzXG4vLyBtb2R1bGUgaWQgPSAxMjBcbi8vIG1vZHVsZSBjaHVua3MgPSAwIl0sIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZVJvb3QiOiIifQ==");
 
 /***/ }),
-/* 121 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar _redux = __webpack_require__(269);\n\nvar _redux2 = _interopRequireDefault(_redux);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nconsole.log('Starting redux example');//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTIxLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2FwcC9yZWR1eC1leGFtcGxlLmpzeD8wNTA4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCByZWR1eCBmcm9tICdyZWR1eCc7XHJcblxyXG5jb25zb2xlLmxvZygnU3RhcnRpbmcgcmVkdXggZXhhbXBsZScpO1xuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyBhcHAvcmVkdXgtZXhhbXBsZS5qc3giXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTs7Ozs7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==");
-
-/***/ }),
+/* 121 */,
 /* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1981,6 +1975,13 @@ __webpack_require__(120);
 __webpack_require__(119);
 module.exports = __webpack_require__(118);
 
+
+/***/ }),
+/* 277 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar redux = __webpack_require__(269);\n\nconsole.log('Starting todo redux example');\n\nvar stateDefault = {\n    searchText: '',\n    showCompleted: false,\n    todos: []\n};\n\nvar reducer = function reducer() {\n    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : stateDefault;\n    var action = arguments[1];\n\n    return state;\n};\n\nvar store = redux.createStore(reducer);\n\nvar currentState = store.getState();\nconsole.log('Current state: ', currentState);//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMjc3LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2FwcC9yZWR1eC10b2RvLWV4YW1wbGUuanN4PzE0NDMiXSwic291cmNlc0NvbnRlbnQiOlsibGV0IHJlZHV4ID0gcmVxdWlyZSgncmVkdXgnKTtcclxuXHJcbmNvbnNvbGUubG9nKCdTdGFydGluZyB0b2RvIHJlZHV4IGV4YW1wbGUnKTtcclxuXHJcbmNvbnN0IHN0YXRlRGVmYXVsdCA9IHtcclxuICAgIHNlYXJjaFRleHQ6ICcnLFxyXG4gICAgc2hvd0NvbXBsZXRlZDogZmFsc2UsXHJcbiAgICB0b2RvczogW11cclxufTtcclxuXHJcbmNvbnN0IHJlZHVjZXIgPSAoc3RhdGUgPSBzdGF0ZURlZmF1bHQsIGFjdGlvbikgPT4ge1xyXG4gICAgcmV0dXJuIHN0YXRlO1xyXG59O1xyXG5cclxubGV0IHN0b3JlID0gcmVkdXguY3JlYXRlU3RvcmUocmVkdWNlcik7XHJcblxyXG5jb25zdCBjdXJyZW50U3RhdGUgPSBzdG9yZS5nZXRTdGF0ZSgpO1xyXG5jb25zb2xlLmxvZygnQ3VycmVudCBzdGF0ZTogJywgY3VycmVudFN0YXRlKTtcblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gYXBwL3JlZHV4LXRvZG8tZXhhbXBsZS5qc3giXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUhBO0FBQ0E7QUFLQTtBQUFBO0FBQUE7QUFDQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9");
 
 /***/ })
 /******/ ]);
