@@ -20,13 +20,21 @@ const reducer = (state = stateDefault, action) => {
     }
 };
 
-let store = redux.createStore(reducer);
+let store = redux.createStore(reducer, redux.compose(
+    window.devToolsExtension ? window.devToolsExtension() : f => f
+));
+
+// Subscribe to changes
+let unsubscribe = store.subscribe(() => {
+    let state = store.getState();
+
+    document.getElementById('app').innerHTML = state.searchText;
+});
 
 const currentState = store.getState();
 console.log('Current state: ', currentState);
 
 store.dispatch({
     type: 'CHANGE_SEARCH_TEXT',
-    searchText: 'G'
+    searchText: 'Hey'
 });
-console.log('searchText should be G', store.getState());
