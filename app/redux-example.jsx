@@ -1,4 +1,5 @@
 let redux = require('redux');
+let axios = require('axios');
 
 console.log('Starting redux example');
 
@@ -19,7 +20,7 @@ const changeName = (name) => {
 };
 
 let nextHobbyId = 1;
-let hobbiesReducer = ( state = [], action) => {
+const hobbiesReducer = ( state = [], action) => {
     switch(action.type){
         case 'ADD_HOBBY':
             return [
@@ -51,7 +52,7 @@ const removeHobby = (id) => {
 };
 
 let nextMovieId = 1;
-let moviesReducer = ( state = [], action) => {
+const moviesReducer = ( state = [], action) => {
     switch(action.type){
         case 'ADD_MOVIE':
             return [
@@ -84,10 +85,60 @@ const removeMovie = (id) => {
     };
 };
 
+const mapInitialState = {
+    isFetching: false,
+    url: undefined
+};
+
+const mapReducer = (state = mapInitialState, action) => {
+    switch(action.type) {
+        case 'START_LOCATION_FETCH' :
+            return {
+                isFetching: true,
+                url: undefined
+            };
+        case 'COMPLETE_LOCATION_FETCH':
+            return {
+                isFetching: false,
+                url: action.url
+            };
+        default:
+            return state;
+    }
+};
+
+const startLocationFetch = () => {
+    return {
+        type: 'START_LOCATION_FETCH'
+    };
+};
+
+const completeLocationFetch = (url) => {
+    return {
+        type: 'COMPLETE_LOCATION_FETCH',
+        url
+    };
+};
+
+const fetchLocation = () => {
+    store.dispatch(startLocationFetch());
+
+    axios.get('http://ipinfo.io').then(
+        (response) => {
+            const loc = response.data.loc;
+            const baseUrl = 'http://maps.google.com?q=';
+
+            store.dispatch(completeLocationFetch(baseUrl+loc));
+        }
+    );
+};
+
+
 let reducer = redux.combineReducers({
     name: nameReducer,
     hobbies: hobbiesReducer,
-    movies: moviesReducer
+    movies: moviesReducer,
+    map: mapReducer
 });
 
 let store = redux.createStore(reducer, redux.compose(
@@ -98,15 +149,20 @@ let store = redux.createStore(reducer, redux.compose(
 let unsubscribe = store.subscribe(() => {
     let state = store.getState();
 
-    document.getElementById('app').innerHTML = state.name;
-
     console.log('New state:', store.getState());
+
+    if(state.map.isFetching)
+        document.getElementById('app').innerHTML = 'Loading...';
+    else if(state.map.url)
+        document.getElementById('app').innerHTML = '<a target="_blank" href="' + state.map.url + '">View Your Location</a>';
 });
 //unsubscribe();
 
 
 const currentState = store.getState();
 console.log('Current state: ', currentState);
+
+fetchLocation();
 
 store.dispatch(changeName('Amaro'));
 
